@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+/* Color schemes */
+.demo-1 {
+	--color-text: #efedeb;
+	--color-bg: linear-gradient(#1f1e1e,#0a53be);
+	--color-link: #12d90c;
+	--color-link-hover: #ffffff;
+	--color-info: #fff;
+	--color-main-text: #cbcbcb;
+	--color-scroll-text: #ffffff;
+	--font-scroll-text: 'DotGothic16', sans-serif;
+	--fontsize-scroll-text: 8vw;
+}
+
+.content__main {
+	color: var(--color-main-text);
+}
+
+.js .content__text::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 69%;
+	bottom: 0;
+	width: calc(6vmax - 1.5rem);
+	background: var(--color-link);
+}
