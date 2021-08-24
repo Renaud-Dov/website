@@ -40,21 +40,28 @@ header {
 }
 
 
-
 header.sticky {
-    background: rgba(38, 109, 66,0.7);
-    transition: background 0.5s;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    padding: 10px 100px;
 
 }
 
+
 header .logo {
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-family: 'DotGothic16', sans-serif;
+
+    background: white;
+    border-radius: 20px;
+
+    padding: 5px;
+
+    /*transform: scale(0.1);*/
+}
+
+header.sticky .logo{
+    background: none;
+    transition: background 0.5s;
+
 }
 
 header ul {
