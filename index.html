@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>BugBear</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="css/circles.css" type="text/css">
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+
     <script src="js/mootools-smoothscroll.js"></script>
-    <script src="js/smoothLink.js"></script>
+    <script src="https://kit.fontawesome.com/70421886e7.js" crossorigin="anonymous"></script>
 
-
-    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">-->
-    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>-->
-    <!--    <link rel="stylesheet" type="text/css" href="css/bubbles.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 </head>
 <body>
-<header id="header">
-    <a  href="#top"><img class="logo" src="img/logo.png"/></a>
+<header id="header" class ="smoothAnchors">
+    <a href="#top"><img class="logo" src="img/logo.png" alt="logo BugBear"/></a>
 
     <ul>
-        <li><a href="#top" class="active">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#projects">My projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -30,25 +31,22 @@
 <div class="context">
 
 
-
     <h1>Renaud-Dov Devers</h1>
-    <img src="img/dov.jpeg"/>
-    <h2><a href="" class="typewrite" data-period="5"
+    <img src="img/dov.jpeg" alt="picture profile"/>
+    <h2><a href="" class="typewrite" data-period="1000"
            data-type='[ "CS Student and Developer", "Coding", "Photography" ]'>
         <span class="wrap"></span>
     </a></h2>
 
-<!--    <h2>CS Student and Developer</h2>-->
+    <!--    <h2>CS Student and Developer</h2>-->
 
 
 </div>
-<section id="top">
+<section id="">
 
     <div class="area">
 
         <ul class="circles">
-            <li></li>
-            <li></li>
             <li></li>
             <li></li>
             <li></li>
@@ -67,55 +65,158 @@
 
 </section>
 
-<!--<div class="spacer layer3"></div>-->
+
+<section class="content orange smoothAnchors" id="About">
+    <h1>About Me</h1>
+    <h2>I am a second year student at Epita, and a developer in my spare time</h2>
 
 
-<section class="content orange" id="About">
-    <h1>test</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur labore magnam nobis, officia
-        reiciendis repellendus similique. Adipisci amet aspernatur consequuntur dicta eligendi eum exercitationem fugiat
-        impedit, libero numquam quasi quibusdam reiciendis reprehenderit tempore ut veritatis voluptate voluptatem? A
-        aliquam amet animi architecto blanditiis corporis cum, cumque debitis delectus distinctio dolorem eaque, earum
-        exercitationem expedita explicabo facilis fugiat hic iusto laboriosam modi nesciunt nihil nulla obcaecati odit
-        perspiciatis quaerat quidem quis quisquam quo sequi veniam, veritatis vero vitae voluptatem voluptates
-        voluptatibus voluptatum! Aliquid aspernatur cupiditate deserunt ducimus ea excepturi fuga iste, iusto laborum
-        minus provident repellat velit voluptate. Iusto, quos?</p>
+    <a href="#" class="link">My CV</a>
+
 
 </section>
 
 <div class="spacer layer1"></div>
 
-<section class="content red" id="projects">
-    <h1>test</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur labore magnam nobis, officia
-        reiciendis repellendus similique. Adipisci amet aspernatur consequuntur dicta eligendi eum exercitationem fugiat
-        impedit, libero numquam quasi quibusdam reiciendis reprehenderit tempore ut veritatis voluptate voluptatem? A
-        aliquam amet animi architecto blanditiis corporis cum, cumque debitis delectus distinctio dolorem eaque, earum
-        exercitationem expedita explicabo facilis fugiat hic iusto laboriosam modi nesciunt nihil nulla obcaecati odit
-        perspiciatis quaerat quidem quis quisquam quo sequi veniam, veritatis vero vitae voluptatem voluptates
-        voluptatibus voluptatum! Aliquid aspernatur cupiditate deserunt ducimus ea excepturi fuga iste, iusto laborum
-        minus provident repellat velit voluptate. Iusto, quos?</p>
+<section class="content red smoothAnchors" id="projects">
+    <h1>My Projects</h1>
+
+    <ul class="project">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Panic At Tortuga</h4>
+                <h5 class="card-subtitle mb-2 text-muted">
+                    <i class="fab fa-unity"></i>
+                </h5>
+                <p class="card-text">Panic At Tortuga is a video game developed on Unity Engine during Epita's S2 project in a
+                    team of 4.</p>
+
+            </div>
+            <img src="img/panicAtTortuga.png" class="card-img-bottom" alt="...">
+
+            <div class="card-footer text-center">
+                <a href="https://github.com/LifeInvaders" class="link2">Github <i class="fab fa-github fa-lg"></i></a>
+                <a href="https://lifeinvaders.github.io/website/" class="link2">Website <i
+                        class="fas fa-gamepad fa-lg"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Panic At Tortuga Launcher</h4>
+                <h5 class="card-subtitle mb-2 text-muted">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-node-js"></i>
+
+
+                </h5>
+                <p class="card-text">Launcher for Panic At Tortuga Game allowing to update the game automatically.</p>
+
+            </div>
+            <img src="img/launcher.jpg" class="card-img-bottom" alt="...">
+
+            <div class="card-footer text-center">
+                <a href="https://github.com/LifeInvaders/launcher" class="link2">Github <i
+                        class="fab fa-github fa-lg"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">CheckStudents</h4>
+                <h5 class="card-subtitle mb-2 text-muted">
+                    <i class="fab fa-python"></i>
+                </h5>
+                <p class="card-text">CheckStudent is Python Discord bot to take the attendance in class.</p>
+
+            </div>
+            <img src="img/checkstudents.jpg" class="card-img-bottom" alt="...">
+
+            <div class="card-footer text-center">
+                <a href="https://github.com/Renaud-Dov/CheckStudents" class="link2">Github <i class="fab fa-github fa-lg"></i></a>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=760157065997320192&permissions=92224&scope=bot" class="link2">Invite <i class="fas fa-angle-right fa-lg"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">My Website</h4>
+                <h5 class="card-subtitle mb-2 text-muted">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3"></i>
+
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-bootstrap"></i>
+
+
+                </h5>
+                <p class="card-text">The Website you are visiting right now ;)</p>
+
+            </div>
+            <img src="img/website.jpg" class="card-img-bottom" alt="...">
+
+            <div class="card-footer text-center">
+                <a href="https://github.com/Renaud-Dov/website" class="link2">Github <i class="fab fa-github fa-lg"></i></a>
+
+            </div>
+
+        </div>
+
+
+    </ul>
+
 
 </section>
 <div class="spacer layer2"></div>
 
 <section class="content light-green" id="contact">
-    <h1>test</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur labore magnam nobis, officia
-        reiciendis repellendus similique. Adipisci amet aspernatur consequuntur dicta eligendi eum exercitationem fugiat
-        impedit, libero numquam quasi quibusdam reiciendis reprehenderit tempore ut veritatis voluptate voluptatem? A
-        aliquam amet animi architecto blanditiis corporis cum, cumque debitis delectus distinctio dolorem eaque, earum
-        exercitationem expedita explicabo facilis fugiat hic iusto laboriosam modi nesciunt nihil nulla obcaecati odit
-        perspiciatis quaerat quidem quis quisquam quo sequi veniam, veritatis vero vitae voluptatem voluptates
-        voluptatibus voluptatum! Aliquid aspernatur cupiditate deserunt ducimus ea excepturi fuga iste, iusto laborum
-        minus provident repellat velit voluptate. Iusto, quos?</p>
+    <h1>Contact Me</h1>
+
+    <div class="container">
+        <form action="mailto:dov@chavers.org" method="get" enctype="text/plain">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="email" placeholder="your@email.com">
+
+            <label for="objectMail">Object</label>
+            <input type="text" id="objectMail" name="firstname" placeholder="Your name..">
+
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
 
 </section>
 
 
 </body>
 
+<footer class=light-green>
+    <a href="#"><img class="logo" src="img/logo.png" alt="logo BugBear"/></a>
+
+    <ul>
+        <li><a href="https://twitter.com/dov_chavers/"><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li><a href="https://github.com/Renaud-Dov"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/dov_devers.pub/"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="mailto:dov@chavers.org"><i class="fas fa-envelope-open-text fa-2x"></i></a></li>
+
+    </ul>
+</footer>
+
 <script src="js/header.js"></script>
 <script src="js/typing.js"></script>
-
+<script src="js/smoothLink.js"></script>
 </html>

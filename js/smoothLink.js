@@ -1,1 +1,4 @@
-window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });
+// var mySmoothScroll = new Fx.SmoothScroll({
+//     links: '.smoothAnchors',
+//     wheelStops: false
+// });
