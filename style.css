@@ -82,12 +82,16 @@ header ul li a {
     font-size: 20px;
     color: white;
     border-radius: 20px;
+    transition: all 0.5s;
 }
 
 header ul li a:hover,
 header ul li a.active {
     background: white;
     color: #266d42;
+    transition: all 0.5s;
+
+
 }
 
 
@@ -114,6 +118,15 @@ section {
 section h1 {
     font-size: 10vh;
     padding: 30px 0;
+    transition: all 0.5s;
+
+
+}
+
+section h1:hover {
+    transform: scale(1.05);
+    text-shadow: 1px 1px 2px #453d3d, 0 0 1em #19191c, 0 0 0.2em rgba(61, 61, 61, 0.34);
+    transition: all 0.5s;
 }
 
 section h2 {
@@ -135,22 +148,31 @@ section .link {
     transition: all 1s;
 
 }
+
 section .link:hover {
-    background-color : #45D27D;
+    background-color: #45D27D;
     color: #eeeeee;
     /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
     box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
     transition: all 1s;
 }
 
-section .link2{
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    grid-auto-rows: minmax(10px, auto);
+    color: black;
+}
+
+.project .link2 {
     white-space: nowrap;
     text-decoration: none;
     padding: 15px 20px;
     margin: 20px 20px;
     font-size: 20px;
     border-radius: 20px;
-
+    white-space: nowrap;
     font-family: "Lato Black", sans-serif;
     background: #06aa41 linear-gradient(to left, #458e31, rgba(0, 0, 0, 0));
     color: white;
@@ -158,39 +180,42 @@ section .link2{
     transition: all 1s;
 }
 
-section .link2:hover {
-    background-color : #45D27D;
+.project .link2:hover {
+    background-color: #45D27D;
     color: #eeeeee;
     /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
     box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
     transition: all 1s;
 }
-section .card{
+
+
+.project .card {
     display: flex;
     border-radius: 30px;
     width: 30vw;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 22px 70px 4px;
-    transition: all 1s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    transition: all 0.5s;
 
 }
-section .card:hover{
+
+.project .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    transition: all 1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 22px 70px 4px;
+    transition: all 0.5s;
 
 
 }
 
 
-section .card .card-subtitle i{
+.project .card .card-subtitle i {
     margin-right: 15px;
 }
 
-section .card-footer{
+.project .card-footer {
     padding: 20px 0;
 }
 
-section .link2 i{
+.project .link2 i {
     position: relative;
     /*display: flex;*/
 }
@@ -225,6 +250,10 @@ section .link2 i{
     background: #28da89;
 }
 
+.magenta {
+    background: #9b00bd;
+}
+
 .spacer {
 
     width: 100%;
@@ -251,42 +280,56 @@ section .link2 i{
     /*transform: translateY(-250px);*/
 }
 
+.layer4 {
+    aspect-ratio: 900/100;
+    background-image: url("img/wave4.svg");
+}
+
+
 /*@-webkit-keyframes moveBG { from { transform: rotateX(0deg) } to { transform: rotateX(180deg)  }  }*/
 /*@keyframes moveBG { from { transform: rotateX(0deg) } to { transform: rotateX(180deg)  }  }*/
 
-.project{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px 30px;
-    grid-auto-rows: minmax(100px, auto);
+/*.progress-bar {*/
+/*    transition: width 5s;*/
+
+/*}*/
+.language .progress{
+    height : 7vh;
+    margin: 5px;
+}
+
+.progress-bar  {
+    /*max-width: 100%;*/
+    /*transition: width 5s;*/
+    animation: animateBar 5s forwards;
+    font-size: 1.5em;
+    white-space: nowrap;
+
+
+}
+
+.language .card {
     color: black;
-
+    width: 40vw;
+    transition: all 0.5s;
 
 }
-.project li{
-    list-style: none;
-    min-height: 300px;
-    background: white;
-    /*min-width: 600px;*/
 
-    width: 30vw;
-
-
-    border-radius: 20px;
-
+.language .card:hover {
+    width: 45vw;
     box-shadow: rgba(0, 0, 0, 0.4) 0 22px 70px 4px;
-
+    transition: all 0.5s;
 }
 
-.project li h2{
+@keyframes animateBar {
+    from {
+        max-width: 0%;
+    }
 
+    to {
+        max-width: 100%;
+    }
 }
-.project li img{
-    transform: scale(0.5);
-}
-
-
-
 
 footer {
     /*background: linear-gradient(#45D27D 60%, #fff);*/
@@ -341,8 +384,7 @@ footer ul li i {
     /*border-radius: 20px;*/
 }
 
-footer ul li i:hover
-{
+footer ul li i:hover {
     /*background: white;*/
     color: #266d42;
 }
