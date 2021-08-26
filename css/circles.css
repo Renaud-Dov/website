@@ -41,6 +41,8 @@
     top: 5vh;
     transform: scale(0.5) translateY(-30%);
     border-radius: 360px;
+    /*animation: slideIn 2s forwards;*/
+
 }
 
 
@@ -53,6 +55,18 @@
     height: 120vh;
 
 
+}
+@keyframes slideIn {
+    from {
+        margin-right: 100vw;
+        opacity: 0;
+    }
+
+    to {
+        margin-right: auto;
+        opacity: 1;
+
+    }
 }
 
 .circles {
