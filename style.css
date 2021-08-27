@@ -78,7 +78,7 @@ body {
 }
 
 
-.navbar .nav-item .nav-link:hover{
+.navbar .nav-item .nav-link:hover {
     background: white;
     transition: all 0.5s;
     color: #266d42;
@@ -107,7 +107,7 @@ section {
 }
 
 section h1 {
-    font-size: 10vh;
+    font-size: 5vw;
     padding: 30px 0;
     transition: all 0.5s;
 
@@ -149,11 +149,15 @@ section .link:hover {
 }
 
 .project {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px 30px;
-    grid-auto-rows: minmax(10px, auto);
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 1fr);*/
+    /*grid-gap: 50px 30px;*/
+    /*grid-auto-rows: minmax(10px, auto);*/
     color: black;
+}
+
+.project .projectCard {
+    margin: 20px 0;
 }
 
 
@@ -184,11 +188,11 @@ section .link:hover {
 .project .card {
     display: flex;
     border-radius: 30px;
-    width: 30vw;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     transition: all 0.5s;
 
 }
+
 
 .project .card:hover {
     transform: scale(1.05);
@@ -199,13 +203,14 @@ section .link:hover {
 }
 
 
-.project .card .card-subtitle i {
-    margin-right: 15px;
+.project .card .card-subtitle  {
+    margin: 15px;
 }
 
 .project .card-footer {
     padding: 20px 0;
 }
+
 
 .project .link2 i {
     position: relative;
@@ -344,16 +349,20 @@ section .link:hover {
 
 }
 
-@keyframes slide {
-    from {
-        margin-right: 100vw;
-        opacity: 0;
-    }
+.colAnim {
+    opacity: 0;
+    transform: translateX(-50vw);
 
-    to {
-        margin-right: 0;
-        opacity: 1;
+}
 
+.colFinal {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .colAnim {
+        transition: opacity 2s ease, transform 2s ease;
     }
 }
 
@@ -364,7 +373,6 @@ section .link:hover {
 
     to {
         opacity: 1;
-
     }
 }
 
@@ -419,10 +427,49 @@ footer ul li i {
     padding: 6px 15px;
     /*font-size: 20px;*/
     color: white;
-    /*border-radius: 20px;*/
+    border-radius: 20px;
+    min-width: 60px;
 }
 
 footer ul li i:hover {
-    /*background: white;*/
+    background: white;
     color: #266d42;
+}
+
+@media (max-width: 991px) {
+    .project .card-footer .col {
+        margin: 30px 0;
+    }
+
+    .project .card {
+        min-width: 50vw;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 3em;
+    }
+
+    .navbar .logo {
+        transform: scale(1.5);
+        margin: 20px;
+    }
+
+    .project .link2 {
+        font-size: 2em;
+    }
+    .project .card .card-subtitle i {
+        font-size: 2em;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .project .card {
+        width: 30vw;
+
+    }
 }

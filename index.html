@@ -41,9 +41,11 @@
     <nav class="navbar fixed-top navbar-expand-lg " id="header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo BugBear"/></a>
-            <button class="navbar-toggler" id= "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars fa-lg"></i>
-<!--                <span class="navbar-toggler-icon"></span>-->
+                <!--                <span class="navbar-toggler-icon"></span>-->
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
@@ -109,8 +111,8 @@
 
 <section class="content orange" id="About">
     <h1>About Me</h1>
-    <div class="row align-items-start">
-        <div class="col">
+    <div class="row align-items-start containerAnim">
+        <div class="col colAnim colFinal ">
             <div class="language">
                 <div class="card text-center">
                     <div class="card-body">
@@ -160,32 +162,38 @@
                         <div class="row align-items-start">
                             <div class="col tool-item">
 
-                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<strong>Git</strong>">
+                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                   data-bs-html="true" title="<strong>Git</strong>">
                                     <img src="img/Git_icon.svg" width="80px" height="80px"><br>
                                 </a>
                             </div>
                             <div class="col tool-item">
-                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<strong>Linux</strong>">
+                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                   data-bs-html="true" title="<strong>Linux</strong>">
                                     <img src="img/linux_icon.svg" width="70px" height="80px"><br>
                                 </a>
                             </div>
                             <div class="col tool-item">
-                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<strong>Flutter</strong>">
+                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                   data-bs-html="true" title="<strong>Flutter</strong>">
                                     <img src="img/flutter_icon.svg" width="70px" height="80px"><br>
                                 </a>
                             </div>
                             <div class="col tool-item">
-                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<strong>Electron</strong>">
+                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                   data-bs-html="true" title="<strong>Electron</strong>">
                                     <img src="img/electron_icon.svg" width="80px" height="80px"><br>
                                 </a>
                             </div>
                             <div class="col tool-item">
-                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<strong>Visual Studio Code</strong>">
+                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                   data-bs-html="true" title="<strong>Visual Studio Code</strong>">
                                     <img src="img/vsc_icon.svg" width="80px" height="80px"><br>
                                 </a>
                             </div>
                             <div class="col tool-item">
-                                <a class="d-inline-block" data-bs-toggle="tooltip"  data-bs-placement="bottom" data-bs-html="true" title="<strong>IntelliJ IDEA</strong>">
+                                <a class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                   data-bs-html="true" title="<strong>IntelliJ IDEA</strong>">
                                     <img src="img/IntelliJ_IDEA_Icon.svg" width="80px" height="80px"><br>
                                 </a>
                             </div>
@@ -196,7 +204,9 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col colAnim colFinal">
+            <h2>My name is Renaud-Dov. I'm a CS student in second at EPITA, and a developer in my spare time. Je
+                m'intéresse à tout ce qui touche à l'intelligence artificielle.</h2>
             <h2>I am a second year student at <strong>Epita</strong>, and a developer in my spare time.</h2>
             <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus accusantium ad alias animi
                 beatae consequuntur cumque dicta doloribus earum explicabo fugiat molestiae nemo optio pariatur
@@ -206,7 +216,7 @@
     </div>
 
 
-    <a href="#" class="link">My CV</a>
+    <a href="#" class="link">Get my CV</a>
 
 
 </section>
@@ -216,110 +226,143 @@
 <section class="content red ">
     <h1>My Projects</h1>
 
-    <ul class="project">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title text-center">Panic At Tortuga</h4>
-                <h5 class="card-subtitle mb-2 text-muted">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto"><img src="img/csharp_flat_icon.svg" width="23px" style="fill: black"
-                                                      height="30px"></div>
-                        <div class="col-md-auto"><i class="fab fa-unity fa-lg"></i></div>
-                    </div>
-                </h5>
-                <p class="card-text">Panic At Tortuga is a video game developed on Unity Engine during Epita's S2
-                    project in a team of 4.</p>
+   <div class="container">
+       <div class="row  project">
+           <div class="col projectCard">
+               <div class="containerAnim">
+                   <div id="ts" class="card colAnim  ">
+                       <div class="card-body">
+                           <h4 class="card-title text-center">Panic At Tortuga</h4>
+                           <h5 class="card-subtitle mb-2 text-muted">
+                               <div class="row justify-content-md-center">
+                                   <div class="col-md-auto"><img src="img/csharp_flat_icon.svg" width="23px"
+                                                                 style="fill: black"
+                                                                 height="30px"></div>
+                                   <div class="col-md-auto"><i class="fab fa-unity fa-lg"></i></div>
+                               </div>
+                           </h5>
+                           <p class="card-text">Panic At Tortuga is a video game developed on Unity Engine during Epita's
+                               S2
+                               project in a team of 4.</p>
 
-            </div>
-            <img src="img/panicAtTortuga.png" class="card-img-bottom" alt="...">
+                       </div>
+                       <img src="img/panicAtTortuga.png" class="card-img-bottom" alt="...">
 
-            <div class="card-footer text-center">
-                <a href="https://github.com/LifeInvaders" class="link2">Github <i class="fab fa-github fa-lg"></i></a>
-                <a href="https://lifeinvaders.github.io/website/" class="link2">Website <i
-                        class="fas fa-gamepad fa-lg"></i></a>
+                       <div class="card-footer text-center">
 
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title text-center">Panic At Tortuga Launcher</h4>
-                <h5 class="card-subtitle mb-2 text-muted">
-
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto"><i class="fab fa-js fa-lg"></i></div>
-                        <div class="col-md-auto"><i class="fab fa-node-js fa-lg"></i></div>
-                        <div class="col-md-auto"><img src="img/electron.svg" width="23px" height="30px"></div>
-
-                    </div>
+                           <div class="row align-items-center">
+                               <div class="col">
+                                   <a href="https://github.com/LifeInvaders" class="link2">Github <i
+                                           class="fab fa-github fa-lg"></i></a></div>
+                               <div class="col">
+                                   <a href="https://lifeinvaders.github.io/website/" class="link2">Website <i
+                                           class="fas fa-gamepad fa-lg"></i></a></div>
+                           </div>
 
 
-                </h5>
-                <p class="card-text">Launcher for Panic At Tortuga Game allowing to update the game automatically.</p>
+                       </div>
 
-            </div>
-            <img src="img/launcher.jpg" class="card-img-bottom" alt="...">
+                   </div>
+               </div>
+           </div>
 
-            <div class="card-footer text-center">
-                <a href="https://github.com/LifeInvaders/launcher" class="link2">Github <i
-                        class="fab fa-github fa-lg"></i></a>
+           <div class="col projectCard">
+               <div class="containerAnim">
 
-            </div>
+                   <div class="card containerAnim colAnim ">
+                       <div class="card-body">
+                           <h4 class="card-title text-center">Panic At Tortuga Launcher</h4>
+                           <h5 class="card-subtitle mb-2 text-muted">
 
-        </div>
+                               <div class="row justify-content-md-center">
+                                   <div class="col-md-auto"><i class="fab fa-js fa-lg"></i></div>
+                                   <div class="col-md-auto"><i class="fab fa-node-js fa-lg"></i></div>
+                                   <div class="col-md-auto"><img src="img/electron.svg" width="23px" height="30px"></div>
 
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title text-center">CheckStudents</h4>
-                <h5 class="card-subtitle mb-2 text-muted">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto"><i class="fab fa-python fa-lg"></i></div>
-                    </div>
-                </h5>
-                <p class="card-text">CheckStudent is Python Discord bot to take the attendance in class used in several
-                    servers around the world.</p>
-
-            </div>
-            <img src="img/checkstudents.jpg" class="card-img-bottom" alt="...">
-
-            <div class="card-footer text-center">
-                <a href="https://github.com/Renaud-Dov/CheckStudents" class="link2">Github <i
-                        class="fab fa-github fa-lg"></i></a>
-                <a href="https://discord.com/api/oauth2/authorize?client_id=760157065997320192&permissions=92224&scope=bot"
-                   class="link2">Invite <i class="fas fa-angle-right fa-lg"></i></a>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title text-center">My Portfolio</h4>
-                <h5 class="card-subtitle mb-2 text-muted">
-
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto"><i class="fab fa-html5 fa-lg"></i></div>
-                        <div class="col-md-auto"><i class="fab fa-css3 fa-lg"></i></div>
-                        <div class="col-md-auto"><i class="fab fa-js fa-lg"></i></div>
-                        <div class="col-md-auto"><i class="fab fa-bootstrap fa-lg"></i></div>
-                    </div>
-                </h5>
-                <p class="card-text">The Website you are visiting right now ;)<br>Made with HTML / CSS / JS with
-                    Bootstrap</p>
-
-            </div>
-            <img src="img/website.jpg" class="card-img-bottom" alt="...">
-
-            <div class="card-footer text-center">
-                <a href="https://github.com/Renaud-Dov/website" class="link2">Github <i class="fab fa-github fa-lg"></i></a>
-
-            </div>
-
-        </div>
+                               </div>
 
 
-    </ul>
+                           </h5>
+                           <p class="card-text">Launcher for Panic At Tortuga Game allowing to update the game
+                               automatically.</p>
+
+                       </div>
+                       <img src="img/launcher.jpg" class="card-img-bottom" alt="...">
+
+                       <div class="card-footer text-center">
+                           <a href="https://github.com/LifeInvaders/launcher" class="link2">Github <i
+                                   class="fab fa-github fa-lg"></i></a>
+
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+
+           <div class="col projectCard">
+               <div class="containerAnim">
+
+                   <div class="card containerAnim colAnim ">
+                       <div class="card-body">
+                           <h4 class="card-title text-center">CheckStudents</h4>
+                           <h5 class="card-subtitle mb-2 text-muted">
+                               <div class="row justify-content-md-center">
+                                   <div class="col-md-auto"><i class="fab fa-python fa-lg"></i></div>
+                               </div>
+                           </h5>
+                           <p class="card-text">CheckStudent is Python Discord bot to take the attendance in class used in
+                               several
+                               servers around the world.</p>
+
+                       </div>
+                       <img src="img/checkstudents.jpg" class="card-img-bottom" alt="...">
+
+                       <div class="card-footer text-center">
+
+
+                           <a href="https://github.com/Renaud-Dov/CheckStudents" class="link2">Github <i
+                                   class="fab fa-github fa-lg"></i></a>
+                           <a href="https://discord.com/api/oauth2/authorize?client_id=760157065997320192&permissions=92224&scope=bot"
+                              class="link2">Invite <i class="fas fa-angle-right fa-lg"></i></a>
+
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+
+           <div class="col projectCard">
+               <div class="containerAnim">
+
+                   <div class="card containerAnim colAnim ">
+                       <div class="card-body">
+                           <h4 class="card-title text-center">My Portfolio</h4>
+                           <h5 class="card-subtitle mb-2 text-muted">
+
+                               <div class="row justify-content-md-center">
+                                   <div class="col-md-auto"><i class="fab fa-html5 fa-lg"></i></div>
+                                   <div class="col-md-auto"><i class="fab fa-css3 fa-lg"></i></div>
+                                   <div class="col-md-auto"><i class="fab fa-js fa-lg"></i></div>
+                                   <div class="col-md-auto"><i class="fab fa-bootstrap fa-lg"></i></div>
+                               </div>
+                           </h5>
+                           <p class="card-text">The Website you are visiting right now ;)<br>Made with HTML / CSS / JS with
+                               Bootstrap</p>
+
+                       </div>
+                       <img src="img/website.jpg" class="card-img-bottom" alt="...">
+
+                       <div class="card-footer text-center">
+                           <a href="https://github.com/Renaud-Dov/website" class="link2">Github <i
+                                   class="fab fa-github fa-lg"></i></a>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+
+       </div>
+   </div>
 
 
 </section>
@@ -359,17 +402,18 @@
     <a href="#"><img class="logo" src="img/logo.png" alt="logo BugBear"/></a>
     <h4 style="color: white">Made with <i class="fas fa-heart" style="color: red"></i> on Github</h4>
     <ul>
-        <li><a href="https://twitter.com/dov_chavers/"><i class="fab fa-twitter fa-2x"></i></a></li>
         <li><a href="https://github.com/Renaud-Dov"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/renaud-dov-devers"><i class="fab fa-linkedin fa-2x"></i></a></li>
         <li><a href="https://www.instagram.com/dov_devers.pub/"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/dov_chavers/"><i class="fab fa-twitter fa-2x"></i></a></li>
         <li><a href="mailto:dov@chavers.org"><i class="fas fa-envelope-open-text fa-2x"></i></a></li>
-
     </ul>
 </footer>
 
 <script src="js/header.js"></script>
 <script src="js/typing.js"></script>
 <script src="js/smoothLink.js"></script>
+<script src="js/animations.js"></script>
 <script>
     $(document).ready(function () {
         $('[data-bs-toggle="tooltip"]').tooltip();

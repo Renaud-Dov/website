@@ -8,7 +8,7 @@
 }
 
 .context .wrap,
-.context .typewrite{
+.context .typewrite {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -56,6 +56,14 @@
 
 
 }
+
+@media (max-width: 991px) {
+    .area {
+        height: 65vh;
+
+    }
+}
+
 @keyframes slideIn {
     from {
         margin-right: 100vw;
