@@ -351,7 +351,7 @@ section .link:hover {
 
 .colAnim {
     opacity: 0;
-    transform: translateX(-50vw);
+    /*transform: translateX(-50vw);*/
 
 }
 
@@ -438,7 +438,7 @@ footer ul li i:hover {
 
 @media (max-width: 991px) {
     .project .card-footer .col {
-        margin: 30px 0;
+        /*margin: 30px 0;*/
     }
 
     .project .card {
@@ -469,7 +469,7 @@ footer ul li i:hover {
 
 @media (min-width: 992px) {
     .project .card {
-        width: 30vw;
+        min-width: 30vw;
 
     }
 }
